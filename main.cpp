@@ -39,7 +39,7 @@ int dvoichny(int a){
         a = a / 2;
         b = b * 10;
     }
-    FILE *file2 = fopen ("C:\\МГТУ\\2 семестр\\Основы программирования на C++\\RK1\\dvoichny.txt", "a");
+    FILE *file2 = fopen ("C:\\kuda-to_tam\\RK1\\dvoichny.txt", "a");
     fprintf(file2, "%d", k);
     fclose(file2);
     return k;
@@ -49,17 +49,17 @@ int main()
 {
     setlocale(LC_ALL, "rus");
 
-    cout << "Задание 2. Введите число" << endl;
+    cout << "Zadanie 2. Vvedite chislo" << endl;
     int z, t;
     cin >> z;
     t = dvoichny(z);
     cout << t << endl;
 
-    cout << "Задание 4. Введите высоту елочки" << endl;
+    cout << "Zadanie 4. Vvedite vysotu elochki" << endl;
     elochka();
 
 
-    cout << "Задание 5. Введите размер матрицы" << endl;
+    cout << "Zadanie 5. Vvedite razmer matritsy" << endl;
     int n, m;
     cin >> n >> m;
     //cout << "Вводите элементы матрицы";
